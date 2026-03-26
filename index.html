@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodie Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>🍔 Foodie Hub</h1>
+        <p>Order your favorite food instantly</p>
+    </header>
+
+    <section class="menu">
+        <div class="card">
+            <h2>Pizza</h2>
+            <p>₹200</p>
+            <button onclick="addToCart('Pizza',200)">Add</button>
+        </div>
+
+        <div class="card">
+            <h2>Burger</h2>
+            <p>₹120</p>
+            <button onclick="addToCart('Burger',120)">Add</button>
+        </div>
+
+        <div class="card">
+            <h2>Sandwich</h2>
+            <p>₹80</p>
+            <button onclick="addToCart('Sandwich',80)">Add</button>
+        </div>
+    </section>
+
+    <section class="cart">
+        <h2>🛒 Cart</h2>
+        <ul id="cartItems"></ul>
+        <h3>Total: ₹<span id="total">0</span></h3>
+        <button onclick="checkout()">Checkout</button>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
